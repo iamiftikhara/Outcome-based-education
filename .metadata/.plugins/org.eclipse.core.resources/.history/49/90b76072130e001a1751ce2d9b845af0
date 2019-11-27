@@ -1,0 +1,47 @@
+package com.controller;
+import java.sql.*;
+import com.dataObjects.Instructor;
+import com.dbconnectivity.DBCon;
+
+public class InstructorController {
+	private Instructor instructor;
+	private DBCon dbConnectivity;
+	
+	public InstructorController() throws ClassNotFoundException, SQLException{
+		instructor=new Instructor();
+		dbConnectivity=new DBCon();
+	}
+	
+	
+	public void registerInstructor(){
+		
+	}
+	
+	public void loginInstructor(String uname, String psw) throws SQLException{
+      //1.Get the data from database
+		String unameIns;
+		String pswIns;
+		Statement stmt=dbConnectivity.getStmt();
+		ResultSet rs;
+		String sql="Select uname,psw from instructor where uname='"+uname+"'"
+				+ "AND psw='"+psw+"'";
+		rs=stmt.executeQuery(sql);
+		if(rs.next()){
+			System.out.println("True");
+		}else{
+			System.out.println("False");
+		}
+		
+		
+		
+		
+		
+		
+	  //2.Check data with parameter if it is equal then true else false
+		
+	  //3. return.
+		
+	  
+	}
+
+}

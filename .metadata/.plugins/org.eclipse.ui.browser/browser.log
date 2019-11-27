@@ -1,0 +1,5 @@
+
+Nov 24, 2019 06:31:17.88 NEW SESSION
+Nov 24, 2019 06:31:17.88 [7648:8316:1124/063117.884:ERROR:socket_stream.cc(218)] Closing stream with result -2
+Nov 24, 2019 07:12:50.72 [7648:8316:1124/071250.600:ERROR:socket_stream.cc(218)] Closing stream with result -2
+Nov 24, 2019 07:42:45.94 [7648:8316:1124/074245.945:ERROR:socket_stream.cc(218)] Closing stream with result -2

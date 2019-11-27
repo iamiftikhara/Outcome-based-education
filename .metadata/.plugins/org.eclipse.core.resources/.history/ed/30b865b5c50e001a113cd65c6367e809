@@ -1,0 +1,9 @@
+function popUp(){
+    document.querySelector('.signIn').style.display="block";
+    console.log("Clicked");
+
+}
+function cross(){
+    document.querySelector('.signIn').style.display="none";
+    console.log("Clicked");
+}

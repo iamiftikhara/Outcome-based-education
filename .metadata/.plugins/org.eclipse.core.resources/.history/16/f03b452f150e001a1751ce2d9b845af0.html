@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+   		<meta charset="ISO-8859-1">
+        <title>OBE automation tool</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navigation clearfix">
+                <ul class="list">
+                    <li class="list_item"><a href="#" class="list_item-link"  onclick="popUp()">SignIn</a></li>
+                    <li class="list_item"><a href="#" class="list_item-link">SignUp</a></li>
+                </ul>
+            </nav>
+            <h1 class="main_heading">Welcome to outcome based <span class="main_secondary--heading">education system tool</span></h1>
+        
+            <div class="signIn">
+                <h2 class="secondary_heading">
+                    SignUp
+                </h2>
+                 <a class="cross" onclick="cross()">X</a>
+                <form action="#" class="form">
+                    <div class="row">
+                        <input type="text" name="uname" class="input" placeholder="User name">
+                    </div>
+                    <div class="row">
+                        <input type="password" name="psw" class="input" placeholder="Password">
+                    </div>
+                    <div class="row">
+                        <input type="submit" class="btn" value="SignIn" id="signIn">
+                    </div>
+                </form>
+        </div>
+        </header>
+        <script src="script.js"></script>
+    </body>
+</html>

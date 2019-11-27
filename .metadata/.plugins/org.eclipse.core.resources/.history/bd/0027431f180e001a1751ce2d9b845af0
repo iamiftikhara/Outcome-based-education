@@ -1,0 +1,29 @@
+package com.server;
+import java.sql.SQLException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.controller.*;
+
+public class InstructorServlet extends HttpServlet {
+	public void service(HttpServletRequest req,HttpServletResponse res){
+//		try {
+//			InstructorController ins=new InstructorController();
+//			String uname=req.getParameter("uname");
+//			String psw=req.getParameter("psw");
+//			ins.loginInstructor(uname,psw );
+//		} catch (ClassNotFoundException | SQLException e) {
+//			// TODO Auto-generated catch block
+//			System.out.println(e.getMessage());
+//		}
+		System.out.println("Clicked");
+	}
+	
+	public static void main(String args[]) throws ClassNotFoundException, SQLException{
+		InstructorController ins=new InstructorController();
+		ins.loginInstructor("ali","psw" );
+	}
+
+
+}

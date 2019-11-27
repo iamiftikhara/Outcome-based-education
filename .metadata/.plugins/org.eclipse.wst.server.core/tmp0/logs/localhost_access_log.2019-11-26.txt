@@ -1,0 +1,10 @@
+127.0.0.1 - - [26/Nov/2019:07:48:55 -0800] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [26/Nov/2019:07:48:55 -0800] "GET /obe_project/index.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [26/Nov/2019:07:48:55 -0800] "GET /obe_project/style.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [26/Nov/2019:07:48:55 -0800] "GET /obe_project/script.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [26/Nov/2019:07:48:56 -0800] "GET /obe_project/image/vasily-koloda-8CqDvPuo_kI-unsplash.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [26/Nov/2019:07:48:56 -0800] "GET /favicon.ico HTTP/1.1" 404 1085
+0:0:0:0:0:0:0:1 - - [26/Nov/2019:07:49:09 -0800] "GET /obe_project/LoginServlet?uname=murad&psw=123 HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [26/Nov/2019:07:49:10 -0800] "GET /obe_project/app.jsp HTTP/1.1" 200 9110
+0:0:0:0:0:0:0:1 - - [26/Nov/2019:07:49:10 -0800] "GET /obe_project/webAppStyle.css HTTP/1.1" 200 2655
+0:0:0:0:0:0:0:1 - - [26/Nov/2019:07:49:10 -0800] "GET /obe_project/webAppScript.js HTTP/1.1" 200 753

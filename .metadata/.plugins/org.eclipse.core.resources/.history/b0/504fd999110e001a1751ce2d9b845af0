@@ -1,0 +1,34 @@
+package com.dbconnectivity;
+
+import java.sql.*;
+
+public class DBCon {
+
+	private Connection con;
+	private Statement stmt;
+	private ResultSet rs;
+	private final String CLASS_NAME="com.mysql.cj.jdbc.Driver";
+	private final String URL="jdbc:mysql://localhost:3306/obe";
+	private final String NAME="root";
+	private final String PSW="password";
+	
+	public DBCon() throws ClassNotFoundException, SQLException{
+		Class.forName(CLASS_NAME);
+		con=DriverManager.getConnection(URL,NAME,PSW);
+	}
+
+    public static void main(String args[]) throws ClassNotFoundException, SQLException {
+    	String query="Select * from instructor";
+    	Class.forName("com.mysql.cj.jdbc.Driver");
+        con=DriverManager.getConnection("jdbc:mysql://localhost:3306/obe","root","password");
+        stmt=con.createStatement();
+        ResultSet rs= stmt.executeQuery(query);
+ 	   
+ 	   while(rs.next())
+ 	   {   	   
+ 
+ 	   System.out.println(rs.getString("fname")+" : "+rs.getString("lname")+" : "+rs.getString("uname")+" : "+rs.getString("email")+" : "+rs.getString("psw"));
+ 	   	}
+    }
+
+}
