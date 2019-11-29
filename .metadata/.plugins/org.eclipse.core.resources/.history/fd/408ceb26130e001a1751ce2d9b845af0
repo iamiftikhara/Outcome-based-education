@@ -1,0 +1,21 @@
+package com.controller;
+import com.dataObjects.Instructor;
+
+public class InstructorController {
+	private Instructor instructor;
+	
+	public InstructorController(){
+		instructor=new Instructor();
+	}
+	
+	
+	public void registerInstructor(){
+//		registeration code
+	}
+	
+	public void loginInstructor(){
+//		login code
+		
+	}
+
+}

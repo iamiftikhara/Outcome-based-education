@@ -1,0 +1,63 @@
+package com.controller;
+import java.sql.*;
+
+import javax.servlet.http.HttpSession;
+
+import com.dataObjects.Instructor;
+import com.dbconnectivity.DBCon;
+
+public class InstructorController {
+	private Instructor instructor;
+	private DBCon dbConnectivity;
+	
+	public InstructorController() throws ClassNotFoundException, SQLException{
+		instructor=new Instructor();
+		dbConnectivity=new DBCon();
+	}
+	
+	
+	public void registerInstructor(Instructor instructor){
+		Statement stmt=dbConnectivity.getStmt();
+		ResultSet rs;
+		String sql="INSERT INTO instructor(fname,lname,uname,email,psw)"
+				+ "VALUES(?,?,?,?,?);";
+		PreparedStatement preparedStmt=dbConnectivity.getConnection().prepareStatement(sql);
+		preparedStmt
+		
+		// the mysql insert statement
+	      String query = " insert into users (first_name, last_name, date_created, is_admin, num_points)"
+	        + " values (?, ?, ?, ?, ?)";
+
+	      // create the mysql insert preparedstatement
+	      PreparedStatement preparedStmt = conn.prepareStatement(query);
+	      preparedStmt.setString (1, "Barney");
+	      preparedStmt.setString (2, "Rubble");
+	      preparedStmt.setDate   (3, startDate);
+	      preparedStmt.setBoolean(4, false);
+	      preparedStmt.setInt    (5, 5000);
+
+	      // execute the preparedstatement
+	      preparedStmt.execute();
+		
+	}
+	
+	public boolean loginInstructor(String uname, String psw) throws SQLException{
+      //1.Get the data from database
+		boolean existed=false;
+		String unameIns;
+		String pswIns;
+		Statement stmt=dbConnectivity.getStmt();
+		ResultSet rs;
+		String sql="Select uname,psw from instructor where uname='"+uname+"'"
+				+ "AND psw='"+psw+"'";
+		rs=stmt.executeQuery(sql);
+		if(rs.next()){
+			existed=true;
+		}
+		dbConnectivity.closeCon();
+		dbConnectivity.closeStmt();
+		 
+		return existed;
+	}
+
+}

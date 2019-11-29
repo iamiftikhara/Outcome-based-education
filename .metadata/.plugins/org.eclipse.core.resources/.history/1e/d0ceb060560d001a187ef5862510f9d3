@@ -1,0 +1,22 @@
+package com.dbconnectivity;
+
+import java.sql.*;
+
+public class DBCon {
+	private static Connection con;
+	private static Statement stmt;
+	private static ResultSet rs;
+    
+	public static void main(String args[]) throws SQLException, ClassNotFoundException{
+		    try{
+		    	Class.forName("com.mysql.cj.jdbc.Driver");
+		        con=DriverManager.getConnection("jdbc:mysql://localhost:3306/obe","root","password");
+		        stmt=con.createStatement();
+		    }
+		    catch(Exception e){
+		    	System.out.print(e.getMessage());
+		    }
+	
+
+}
+}

@@ -1,0 +1,11 @@
+package com.server;
+import java.sql.SQLException;
+
+import com.controller.*;
+public class InstructorServlet {
+	public static void main(String args[]) throws ClassNotFoundException, SQLException{
+		InstructorController ins=new InstructorController();
+		ins.loginInstructor("alinn", "44040");
+	}
+
+}

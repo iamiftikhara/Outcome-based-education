@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>OBE automation tool</title>
+        <meta charset="ISO-8859-1">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navigation clearfix">
+                <ul class="list">
+                    <li class="list_item"><a href="#" class="list_item-link"  onclick="singIn()">SignIn</a></li>
+                    <li class="list_item"><a href="#" class="list_item-link" onclick="singUp()">SignUp</a></li>
+                </ul>
+            </nav>
+            <h1 class="main_heading">Welcome to outcome based <span class="main_secondary--heading">education system tool</span></h1>
+        
+            <div class="signIn">
+                <h2 class="secondary_heading">
+                    SignIn
+                </h2>
+                <a class="cross" onclick="crossSignIn()">X</a>
+                <form action="InstructorServlet" class="form">
+                    <div class="row">
+                        <input type="text" class="input" placeholder="User name" name="uname">
+                    </div>
+                    <div class="row">
+                        <input type="password" class="input" placeholder="Password" name="psw">
+                    </div>
+                    <div class="row">
+                        <input type="submit" class="btn" value="SignIn" id="signIn">
+                    </div>
+                </form>
+        </div>
+          <div class="signUp">
+                <h2 class="secondary_heading">
+                    SignUp
+                </h2>
+                <a class="cross" onclick="crossSignUp()">X</a>
+                <form action="#" class="form">
+                    <div class="row">
+                        <input type="text" class="input" placeholder="First name">
+                    </div>
+                    <div class="row">
+                        <input type="text" class="input" placeholder="last name">
+                    </div>
+                    
+                    <div class="row">
+                        <input type="text" class="input" placeholder="User Name">
+                    </div>
+                    <div class="row">
+                        <input type="email" class="input" placeholder="Email">
+                    </div>
+                    <div class="row">
+                        <input type="password" class="input" placeholder="password">
+                    </div>
+                    
+                    <div class="row">
+                        <input type="submit" class="btn" value="SignUp" id="signIn">
+                    </div>
+                </form>
+        </div>
+        </header>
+        <section class="about">
+            <h2 class="secondary_heading">About OBE tool</h2>
+            <p class="about_text">
+                Outcome-based education (OBE) is an educational theory that bases each part of an educational system around goals (outcomes). By the end of the educational experience, each student should have achieved the goal. There is no single specified style of teaching or assessment in OBE; instead, classes, opportunities, and assessments should all help students achieve the specified outcomes.[1] The role of the faculty adapts into instructor, trainer, facilitator, and/or mentor based on the outcomes targeted.
+                
+            </p>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
